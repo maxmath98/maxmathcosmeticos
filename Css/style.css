@@ -1,12 +1,12 @@
-:root[
-    .color1 { #081B26 };
-    .color2 { #456173 };
-    .color3 { #F2E2C4 };
-    .color4 { #D99255 };
-    .color5 { #BF8C6F };
+:root{
 
+--fundo-menu-lateral: #081B26;
+--fundo-claro: #456173;
+--fundo-claro2: #F2E2C4;
 
-    --cor1: #012840;
-    --cor2: #037F8C;
-    --cor3: #38E0F2;
-]
+--texto-claro: #D99255;
+--texto-escuro: #BF8C6F;
+
+--cor2: #ffffff;
+--cor3: #037f8c;
+}
