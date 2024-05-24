@@ -59,7 +59,8 @@ h1,h2,h3,h4,h5,h6{
     color: var(--cor3); 
 }
 .back-to-top.active{
-    visibility: visible;0
+    visibility: visible;
+    opacity: 1;
 }
 
 #header{
@@ -262,8 +263,6 @@ h1,h2,h3,h4,h5,h6{
         justify-content: center;
     }
 }
-
-
 
 #hero p{
    padding-left: 25px;
