@@ -5,6 +5,7 @@
 --fundo-claro2: #F2E2C4;
 --fundo-fundo: #01060D;
 
+
 --texto-claro: #D99255;
 --texto-escuro: #ffffff;
 --texto-hover: #38e038;
@@ -267,4 +268,96 @@ h1,h2,h3,h4,h5,h6{
 #hero p{
    padding-left: 25px;
 }  
+
+/* Seções gerais */ 
+section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
+    padding: 60px 0;
+    overflow: hidden;
+    background: var(); /* Escolher a cor do fundo onde fica a 2a imagem */
+    
+}
+.section-bg{
+    background: var();
+    color: var(--cor3);
+    
+}
+
+.section-title h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: var(--cor3); /* Texto da segunda seção */
+    position: relative;
+}
+.section-title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--cor-detalhes);
+    bottom: 0;
+    left: 0;
+}
+ .section-title p{
+    margin-bottom: 0;
+ }
+
+ .sobre .content h3{
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--cor3);
+
+ }
+ .sobre .content ul li{
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+ }
+
+ .sobre .content ul li strong{
+    margin-left: 10px;
+ }
+
+ .sobre .content ul li i{
+    font-size: 16px;
+    color: var(--fundo-claro);
+    margin-right: 4px;
+    line-height: 0;
+ }
+
+ /* Conquistas */
+
+ .conquistas .count-box{
+    padding: 30px;
+    width: 100%;
+ }
+
+ .conquistas .count-box i{
+    display: block;
+    font-size: 44px;
+    color: var(--cor-detalhes);
+    float: left;
+    line-height: 0;
+ }
+ .conquistas .count-box span{
+    font-size: 48px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: var(--fundo-claro); /* Cor do numero de vendas */
+
+ }
+ .conquistas .count-box p{
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: "Open", sans-serif;
+    color: var(--fundo-claro2);
+ }
+ .conquistas .count-box i:hover{
+    color: var();
+ }
+
+
 
