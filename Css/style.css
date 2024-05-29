@@ -366,6 +366,10 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
  }
 
  /* Skills // Habilidades // Vendas */
+ .skills h2{
+    color: red;
+ }
+ 
 .skills .progress{
     height: 60px;
     display: block;
@@ -394,6 +398,5 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     height:10px;
     transition: 3s;
     background: #ff0512;
-
 }
 
