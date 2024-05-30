@@ -399,4 +399,54 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     transition: 3s;
     background: #ff0512;
 }
+/* Historia */
+.resume .resume-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid var(--title-secundary);
+}
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: ;
+}
 
+/* Media */
+@media(max-width: 768px){
+    #hero h1{
+        font-size: 60px;
+        line-height: 45px;
+        padding-left: 50px;
+    }
+    #hero p {
+        padding-left: 50px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 1024px){
+    #hero{
+        background-attachment: fixed;
+    }
+    
+}
+@media (max-width: 1199px){
+    #header {
+        left: -300px;
+    }
+    #main {
+        margin-left: 0;
+    }
+    .container,
+    .container-fluid{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pagina inicial - SantosRS </title>
+    <!-- Meta -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Css Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/aos/aos.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="bootstrap/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="bootstrap/glightbox/css/glightbox.min.css">
+    <link rel="stylesheet" href="bootstrap/swiper/swiper-bundle.min.css">
+    <!-- Css Principal -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    
+    <!-- Botão Menu mobile -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none "></i>
+    <!-- Header -->
+    <header id="header">
+        <div class="d-flex flex-column">
+            <!-- Perfil -->
+            <div class="perfil">
+                
+                <img class="img-fluid rounded-circle" src="img/perfil.jpg" alt="logotipo do site">
+                <h1 class="text-light"><a href="index.html">Santos<span id="red">RS</span> </a></h1>
+
+                <div class="social-links mt-3 text-center">
+                    <a class="instagram" href="#" target="_blank"><i class="bx bxl-instagram"></i></a>
+                    <a class="facebook" href="#" target="_blank"><i class="bx bxl-facebook"></i></a>
+                    <a class="twitter" href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+                </div>
+
+            </div>
+            <!-- Fim perfil -->
+
+            <!-- Navbar -->
+            <div id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i><span>Home</span></a></li>
+                    <li><a href="#sobre" class="nav-link scrollto"><i class="bx bx-car"></i><span>Sobre</span></a></li>
+                    <li><a href="#resumo" class="nav-link scrollto"><i class="bx bx-book"></i><span>Historia</span></a></li>
+                    <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-notepad"></i><span>Portfolio</span></a></li>
+                    <li><a href="#servicos" class="nav-link scrollto"><i class="bx bx-wrench"></i><span>Serviços</span></a></li>
+                    <li><a href="#contato" class="nav-link scrollto"><i class="bx bxl-whatsapp"></i><span>contato</span></a></li>
+                    
+                </ul>
+            </div>
+            <!-- Fim Navbar -->
+        </div>
+    </header>
+    <!-- Fim Header -->
+
+    <!-- seção hero -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-in">
+            <h1>Santos<span id="red">RS</span></h1>
+            <p> Concessionaria de veiculos <span class="typed" data-typed-items="Aprimorados, com Body-kit, para Drift"></span></p>
+        </div>
+    </section>
+    <!-- Fim seção hero -->
+
+    <!-- Main -->
+    <main id="main">
+        <!-- Sobre -->
+        <section id="sobre" class="sobre">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <h2> Sobre </h2>
+                    <p> Seja bem-vindo à SantosRS, a sua concessionária de carros esportivos em São Paulo! </p> 
+                </div>
+                <!-- Row -->
+                <div class="row">
+
+                    <div class="col-lg-4" data-aos="fade-right">
+                        <img class="img-fluid rounded-circle" src="img/bg-reserva/fundo.jpeg" alt="">
+                    </div>
+                    <!-- Div content -->
+                    <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                        <h3> SantosRS: Adrenalina Pura em Quatro Rodas </h3>
+                        
+                        <p class="fst-italic">Somos apaixonados por carros potentes, e carros focados para o drift, e estamos aqui para realizar o sonho dos entusiastas como você.</p>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li>
+                                        <i class="bi bi-calendar-check"></i>
+                                        <strong>Data Inauguração:</strong> <span> 16/Abril/2012</span>
+                                    </li>
+                                                                        
+                                    <li>
+                                        <i class="bi bi-geo-alt"></i>
+                                        <strong> Endereço: </strong> <span> Rua dos exemplos n°123 </span>
+                                    </li>
+
+                                    <li>
+                                        <i class="bi bi-globe-americas"></i>
+                                        <strong> Cidade: </strong> <span> São Paulo/SP </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li>
+                                        <i class="bi bi-globe"></i>
+                                        <strong> Site: </strong> <span> lukasrss.github.io/santosRS/</span>
+                                    </li>
+
+                                    <li>
+                                        <i class="bi bi-telephone"></i>
+                                        <strong> Telefone: </strong> <span> (11) 91234 - 5678 </span>
+                                    </li>
+
+
+                                    <li>
+                                        <i class="bi bi-envelope"></i>
+                                        <strong> Email: </strong> <span> exemplo@hotmail.com </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <p>Juntos seremos uma das maiores Concessionaria da Região</p>
+                    </div>
+                    <!-- fim Div content -->
+                </div>
+                <!-- Fim Row -->
+            </div>
+
+        </section>
+        <!-- Fim Sobre -->
+
+        <!-- Conquistas -->
+        <section id="conquistas" class="conquistas">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Feitos</h2>
+                    <p>Na SantosRS, o seu sonho de drift se torna realidade!</p>
+                </div>
+                
+                <!-- Row -->
+                <div class="row">
+                    <!-- Item-1 conquistas -->
+                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+
+                        <div class="count-box">
+                            <i class="bi bi-emoji-smile"></i>
+                            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="384" data-purecounter-duration="3"></span>
+                            <p> <strong>Clientes satisfeitos</strong> Com nossos veiculos de alta performance.</p>
+                        </div>
+
+                    </div>
+                    <!-- Fim Item-1 conquistas -->
+
+                     <!-- Item-2 conquistas -->
+                     <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+
+                        <div class="count-box">
+                            <i class="bi bi-car-front"></i>
+                            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="432" data-purecounter-duration="3"></span>
+                            <p> <strong>Carros vendidos</strong> Grande sucesso de venda com nossa variação de veiculos. </p>
+                        </div>
+
+                    </div>
+                    <!-- Fim Item-2 conquistas -->
+
+                     <!-- Item-3 conquistas -->
+                     <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+
+                        <div class="count-box">
+                            <i class="bi bi-wrench"></i>
+                            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="587" data-purecounter-duration="3"></span>
+                            <p> <strong>Aprimoramentos</strong> Venha tambem trazer seu veiculo para receber um upgrade.</p>
+                        </div>
+
+                    </div>
+                    <!-- Fim Item-3 conquistas -->
+
+                     <!-- Item-4 conquistas -->
+                     <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+
+                        <div class="count-box">
+                            <i class="bi bi-trophy"></i>
+                            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="44" data-purecounter-duration="3"></span>
+                            <p> <strong>Carros Premiados</strong> em competições de diversas modalidades.</p>
+                        </div>
+
+                    </div>
+                    <!-- Fim Item-4 conquistas -->
+
+                </div>
+                <!-- Fim Row -->
+
+            </div>
+
+        </section>
+        <!-- Fim Conquistas -->
+
+        <!-- Habilidades -->
+        <section id="skills" class="skills section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Vendas</h2>
+                    <p>Conheça os modelos mais vendidos</p>
+                </div>
+
+                <div class="row skills-content">
+                    <!-- Col-lg-6 -->
+                    <div class="col-lg-6" data-aos="fade-up">
+
+                        <div class="progress">
+                            <span class="skill">Mercedes <i class="val">86%</i></span>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill"> BMW <i class="val">72%</i></span>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill"> Madza <i class="val">57%</i></span>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100">
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Col-lg-6 -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+                        <div class="progress">
+                            <span class="skill"> Dodge <i class="val">82%</i></span>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill"> Restaurados <i class="val">43%</i></span>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100">
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill"> Modificados <i class="val">63%</i></span>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100">
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Fim Habilidades -->
+
+        <!-- Resumo -->
+        <section id="resume" class="resume">
+
+            <div class="container">
+                <div class="section-title">
+                    <h2> Historia </h2>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor repellendus assumenda hic facere explicabo doloribus incidunt corporis eligendi provident repellat. </p>
+                </div>
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <h3 class="resume-title"> Fundador </h3>
+                        <div class="resume-item pb-0">
+                            <h4> Lucas Roberto </h4>
+                            <p><em>Desde criança, ele nutria um fascínio por carros. Observava-os com admiração, imaginando-se dirigindo por longas estradas e explorando novos horizontes. Mais do que um simples meio de transporte, os automóveis representavam para ele liberdade, aventura e a realização de sonhos.</em></p>
+                        </div>
+
+                        <h3 class="resume-title"> Criação </h3>
+                        <div class="resume-item">
+                            <h4> O inicio! </h4>
+                            <h5>2012</h5>
+                            <p><em>Em 2012, após anos de dedicação e trabalho duro, ele finalmente concretizou seu maior desejo: abrir sua própria concessionária de carros. Era a materialização de um sonho acalentado por tanto tempo, um marco que simbolizava sua paixão por esse universo e a determinação em transformar sua ambição em realidade.</em></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+                        <h3 class="resume-title"> Evolução </h3>
+                        <div class="resume-item">
+                            <h4>Novas Parcerias</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati maxime velit suscipit qui, similique natus perspiciatis, ut nam ex hic ullam necessitatibus et inventore debitis architecto ad cum fuga?</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Fim Row -->
+            </div>
+
+        </section>
+        <!-- Fim Resumo -->
+    </main>
+    <!-- Fim Main -->
+
+    <!-- Footer -->
+    <footer id="footer">
+
+    </footer>
+    <!-- Fim Footer -->
+
+    <a class="back-to-top d-flex align-items-center justify-content-center" href="#">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Bootstrap Scripts -->
+    <script src="bootstrap/aos/aos.js"></script>
+    <script src="bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/glightbox/js/glightbox.min.js"></script>
+    <script src="bootstrap/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="bootstrap/purecounter/purecounter_vanilla.js"></script>
+    <script src="bootstrap/swiper/swiper-bundle.min.js"></script>
+    <script src="bootstrap/typed.js/typed.umd.js"></script>
+    <script src="bootstrap/waypoints/noframework.waypoints.js"></script>
+    
+    <!-- Javascript Principal -->
+    <script src="js/main.js"></script>
+</body>
+</html>
