@@ -418,6 +418,104 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     text-transform: uppercase;
     font-family: ;
 }
+.resume .resume-item ul {
+    padding-left: 20px;
+}
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+}
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    background: var(--texto-claro);
+    border: 2px solid var(--cor-detalhes);
+}
+
+/* Filtros Portfolio */
+.portfolio .portfolio-item{
+    margin-bottom: 30px;
+}
+.portfolio #portfolio-filters{
+    padding: 0;
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;
+    background: var(--fundo-claro);
+    border-radius: 50px;
+    padding: 2px 15px;
+}
+
+.portfolio #portfolio-filters li{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px 8px 15px;
+    font-size: 16px;
+    line-height: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--fundo-menu-lateral);
+    transition: all 0.5 ease-in-out;
+}
+.portfolio #portfolio-filters li:hover,
+.portfolio #portfolio-filters li.filter-active{
+     color: white;
+}
+.portfolio .portfolio-wrap{
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .portfolio-wrap::before{
+    content: "";
+    background: rgba(255,255,255, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+}
+.portfolio .portfolio-wrap .portfolio-links{
+    opacity: 1;
+    right: 0;
+    bottom: -60;
+    left: 0;
+    z-index: 3;
+    position: absolute;
+    transition: ease-in-out 0.3s;
+    display: flex;
+    justify-content: center;
+}
+.portfolio .portfolio-wrap .portfolio-links a{
+    color: var(--texto-opaco);
+    font-size: 28px;
+    text-align: center;
+    background: var(--texto-claro);
+    transition: 0.3s;
+    width: 50%;
+}
+.portfolio .portfolio-wrap .portfolio-links a:hover{
+    background: var(--fundo-claro);
+}
+.portfolio .portfolio-wrap .portfolio-links a+a{
+    border-left: 1px solid var(--fundo-menu-lateral);
+}
+.portfolio .portfolio-wrap:hover::before{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+}
+
+
 
 /* Media */
 @media(max-width: 768px){
@@ -450,3 +548,4 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
         padding-right: 12px;
     }
 }
+
