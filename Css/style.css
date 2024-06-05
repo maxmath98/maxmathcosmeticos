@@ -515,6 +515,39 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     opacity: 1;
 }
 
+.portfolio .portfolio-wrap:hover .portfolio-links{
+    opacity: 1;
+    bottom: 0;
+}
+.services .icon-box{
+    margin-bottom: 20px;
+}
+.services .icon{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    weight:54px ;
+    height: 54px;
+    background: var(--fundo-claro);
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 2px solid var(--cor-detalhes);
+    box-shadow: 0 0 8px 2px black;
+}
+.services .icon i{
+    color: var(--fundo-claro);
+    font-size: 24px;
+    line-height: 0;
+}
+
+.services .icon-box:hover .icon{
+    background: var(--fundo-claro);
+    transition: ease-in-out 0.3s;
+}
+.services .icon-box:hover .icon i{
+    color: var(--Verde-florescente);
+
 
 
 /* Media */
@@ -548,4 +581,6 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
         padding-right: 12px;
     }
 }
+
+
 
