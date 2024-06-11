@@ -433,3 +433,211 @@ section {
     background: var(--texto-claro);
     border: 2px solid var(--cor-detalhes);
 }
+/* Filtros Portfolio */
+.portfolio .portfolio-item {
+    margin-bottom: 30px;
+}
+.portfolio #portfolio-filters {
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;
+    background: var(--fundo-claro);
+    border-radius: 10px;
+    padding: 2px 15px;
+}
+.portfolio #portfolio-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px 8px 15px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--texto-escuro);
+    transition: all 0.5s ease-in-out;
+}
+.portfolio #portfolio-filters li:hover,
+.portfolio #portfolio-filters li.filter-active{
+    color: var(--cor-detalhes);
+}
+.portfolio .portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .portfolio-wrap::before{
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+}
+.portfolio .portfolio-wrap .portfolio-links {
+    opacity: 1;
+    right: 0;
+    bottom: -60px;
+    left: 0;
+    z-index: 3;
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    justify-content: center;
+}
+.portfolio .portfolio-wrap .portfolio-links a {
+    color: var(--texto-escuro);
+    font-size: 28px;
+    text-align: center;
+    background: var(--texto-hover);
+    transition: 0.3s;
+    width: 50%;
+}
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+    background: var(--fundo-escuro);
+}
+.portfolio .portfolio-wrap .portfolio-links a+a {
+    border-left: 1px solid var(--fundo-menu-lateral);
+}
+.portfolio .portfolio-wrap:hover::before {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+}
+.portfolio .portfolio-wrap:hover .portfolio-links {
+    opacity: 1;
+    bottom: 0;
+}
+/* portfolio Detalhes */
+
+
+/*  ========  voltar  ========   */
+
+/* Serviços // Produtos  */
+
+.services .icon-box {
+    margin-bottom: 20px;
+}
+.services .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    background: var(--fundo-menu-lateral);
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 2px solid var(--cor-detalhes);
+    box-shadow: 0 0 8px 2px black;
+}
+.services .icon i {
+    color: var(--texto-claro);
+    font-size: 24px;
+    line-height: 0;
+}
+.services .icon-box:hover .icon {
+    background: var(--fundo-claro);
+    transition: ease-in-out 0.3s;
+}
+.services .icon-box:hover .icon i {
+    color: var(--texto-escuro);
+}
+.services .title {
+    margin-left: 80px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--texto-branco);
+}
+.services .description {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 18px;
+}
+/* depoimentos / feedbacks  */
+.depoimentos, 
+.depoimentos .depoimentos-slider{
+    overflow: hidden;
+}
+.depoimentos .depoimento-item {
+    /* box-sizing: content-box; */
+    text-align: center;
+    min-height: 320px;
+}
+.depoimentos .depoimento-item .depoimento-img {
+    width: 90px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.depoimentos .depoimento-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: var(--cor-detalhes);
+}
+.depoimentos .depoimento-item h4 {
+    font-size: 14px;
+    color: var(--texto-claro);
+    margin: 0;
+}
+.depoimentos .depoimento-item .quote-icon-left,
+.depoimentos .depoimento-item .quote-icon-right{
+    color: var(--cor-detalhes);
+    font-size: 26px;
+}
+.depoimentos .depoimento-item .quote-icon-left {
+    position: relative;
+    display: inline-block;
+    left: -5px;
+}
+.depoimentos .depoimento-item .quote-icon-right {
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    right: -5px;
+}
+.depoimentos .depoimento-item p {
+    font-style: italic;
+    margin: 0 15px 35px 15px;
+    padding: 20px;
+    background: var(--fundo-claro);
+    position: relative;
+    color: var(--texto-escuro);
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+.depoimentos .depoimento-item p::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 20px);
+    border-top: 20px solid var(--fundo-claro);
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+.depoimentos .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+.depoimentos .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: var(--fundo-claro);
+    /* opacity: 1; */
+    /* border: 1px solid var(--cor-detalhes); */
+    
+}
+.depoimentos .swiper-pagination .swiper-pagination-bullet-active{
+    background: var(--texto-claro);
+}
+/* .depoimentos .swiper-pagination .swiper-pagination-bullet:hover{
+    background: var(--cor-detalhes);
+} */
