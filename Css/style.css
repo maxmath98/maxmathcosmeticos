@@ -642,3 +642,46 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
 /* .depoimentos .swiper-pagination .swiper-pagination-bullet:hover{
     background: var(--cor-detalhes);
 } */
+.contato{
+    padding-bottom: 130px;
+    
+
+}
+.contato .info{
+    padding: 30px;
+    background: var(--Bege);
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.contato .info i{
+    font-size: 20px;
+    color: var(--cor-detalhes);
+    float: left;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--fundo-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.contato .info h4{
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--Verde-florescente);
+}
+.contato .info p{
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.contato .info .fone i:hover{
+    background: var(--fundo-claro);
+    color: var(--rosa);
+}
+.contato .info .fone a:hover{
+    color: var(--rosa);
+}
