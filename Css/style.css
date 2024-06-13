@@ -637,15 +637,13 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     
 }
 .depoimentos .swiper-pagination .swiper-pagination-bullet-active{
-    background: var(--texto-claro);
+    background: var(--Verde-florescente);
 }
 /* .depoimentos .swiper-pagination .swiper-pagination-bullet:hover{
     background: var(--cor-detalhes);
 } */
 .contato{
     padding-bottom: 130px;
-    
-
 }
 .contato .info{
     padding: 30px;
@@ -660,7 +658,7 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: var(--fundo-claro);
+    background: var(--Bege);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -679,9 +677,81 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     font-size: 16px;
 }
 .contato .info .fone i:hover{
-    background: var(--fundo-claro);
+    background: var(--rosa);
     color: var(--rosa);
 }
 .contato .info .fone a:hover{
     color: var(--rosa);
 }
+.contato.email-form{
+    width: 100%;
+    padding: 30px;
+    background: var(--Bege);
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); 
+}
+.contato .email-form .form-grupo{
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+
+}
+.contato .email-form label{
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    color: red;
+}
+.contato .email-form input,
+.contato .email-form textarea{
+    border-radius: 0;
+}
+.contato .email-form input{
+        height: 45px;
+}
+.contato .email-form textarea{
+    padding: 10px 15px;
+}
+.contato .email-form button
+[type=submit]{
+    background: var(--cor3);
+    border: 0;
+    padding: 10px 24px;
+    color: var(--Branco);
+    border-radius: 4px;
+    margin-top: ;
+}
+/* Roda pé */
+#footer{
+    padding: 15px;
+    color: var(--fundo-menu-lateral);
+    font-size: 16px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    background: var(--fundo-menu-lateral);
+    width: 300px;
+}
+#footer .copyright{
+    text-align: center;
+}
+#footer .creditos{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--Branco);
+}
+#footer .creditos a{
+    color: aqua;
+}
+#footer .creditos a:hover{
+    color: #032b03;
+}
+
+@media (max-width: 1199px){
+    #footer {
+        position: static;
+        width: auto;
+        padding-right: 20px 15px;
+    }
+}
+    
