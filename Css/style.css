@@ -1,19 +1,25 @@
-:root{
+/* variavel para as cores  */
+:root {
 
---fundo-menu-lateral: #081B26;
+    --background-color: rgba(5, 13, 24, 0.555);
+    --fundo-menu-lateral: #012840;
+--fundo-claro: #a6afb4;
+--fundo-escuro: #2f3538;
+
 --fundo-claro: #456173;
---fundo-claro2: #F2E2C4;
 --fundo-fundo: #01060D;
 
-
---Bege: #D99255;
+--cinza: #a6afb4;
+--Bege: #F2E2C4;
 --Branco: #ffffff;
 --Verde-florescente: #38e038;
 --rosa:#ff05d5;
 --vermelho: #ff0512;
 --verde-escuro: #032b03;
 
-
+--texto-titulo-claro: #38E0F2;
+--texto-titulo-escuro: #037F8C;
+--cor-detalhes: #149ddd;
 
 --cor2: #ffffff;
 --cor3: #037f8c;
@@ -27,12 +33,12 @@ body{
     background: var(--fundo-menu-lateral);
 }
 
-a{
-    color: ;
+a {
+    color: var(--texto-escuro);
     text-decoration: none;
 }
 a:hover{
-    color: var(--cor2);
+    color: var(--Branco);
     text-decoration: none; /* Retirar underline */
 }
 h1,h2,h3,h4,h5,h6{
@@ -49,20 +55,20 @@ h1,h2,h3,h4,h5,h6{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: var(--cor-detalhes);
-    transition: all 0.4s
-    ;
+    background: var(--fundo-menu-lateral);
+    transition: all 0.4s;
+    
 
 }
 
 .back-to-top i {
     font-size: 28px;
-    color: var(--cor2);
+    color: var(--Branco);
     line-height: 0;
 }
 .back-to-top:hover{
-    background: var(--fundo-menu-lateral); /* cor do fundo */
-    color: var(--cor3); 
+    background: var(--Preto); /* cor do fundo */
+    color: var(--Preto); 
 }
 .back-to-top.active{
     visibility: visible;
@@ -75,28 +81,30 @@ h1,h2,h3,h4,h5,h6{
     left:0; /* Espaço da esquerda para direita */
     bottom: 0; /* Espaço debaixo pra cima */
     width: 300px; /* Tamanho da área do logo na header */
-    transition: all ease-in-out 0.55;
+    transition: all ease-in-out 0.5;
     z-index:99;
     padding: 0 15px;
-    background: var(--fundo-fundo);
+    background: var(--Preto);
     overflow: auto;
 }
 
 #header .perfil img{
     margin: 15px auto;
     display: block;
-    width: 300px;
-    border: 2px solid var(--fundo-claro2);    
+    width: 210px;
+    border: 2px solid var(--Bege);
+    box-shadow: 0px 0px 10px 0px var(--sombra-clara);
+    /* sombra */
 }
 
 #header .perfil h1{
-    font-size: 23px; /* Tamanho do texto */
-    margin: 25px; /*  */
+    font-size: 22px; /* Tamanho do texto */
+    margin: 20px; /*  */
     padding: 0;
-    font-weight: 500;
+    font-weight: 550;
     text-align: center;
 }
-.perfil .social-links a {
+.perfil .social-links i {
     font-size:18px;
     display: inline-block;
     background: transparent var(--Preto);
@@ -358,7 +366,7 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     padding: 15px 0 0 0;
     margin: 0 0 0 60px;
     font-family: "Open", sans-serif;
-    color: var(--fundo-claro2);
+    color: var(--bege);
  }
  .conquistas .count-box i:hover{
     color: var();
@@ -722,29 +730,31 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
 /* Roda pé */
 #footer{
     padding: 15px;
-    color: var(--fundo-menu-lateral);
+    color: var(--texto-claro);
     font-size: 16px;
     position: fixed;
     left: 0;
     bottom: 0;
     z-index: 9999;
-    background: var(--fundo-menu-lateral);
+    background: var(--Preto);
     width: 300px;
 }
-#footer .copyright{
+
+#footer .copyright {
     text-align: center;
 }
 #footer .creditos{
     padding-top: 5px;
     text-align: center;
     font-size: 13px;
-    color: var(--Branco);
+    color: var(--texto-claro);
 }
 #footer .creditos a{
     color: aqua;
 }
-#footer .creditos a:hover{
-    color: #032b03;
+
+#footer .creditos a:hover {
+    color: var(--texto-titulo-escuro);
 }
 
 @media (max-width: 1199px){
