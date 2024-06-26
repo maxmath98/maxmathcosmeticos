@@ -2,12 +2,19 @@
 :root {
 
     --background-color: rgba(5, 13, 24, 0.555);
-    --fundo-menu-lateral: #012840;
+
+--fundo-menu-lateral: #012840;
 --fundo-claro: #a6afb4;
 --fundo-escuro: #2f3538;
 
---fundo-claro: #456173;
---fundo-fundo: #01060D;
+--borda-clara: #38E0F2;
+--borda-escura: #037F8C;
+
+--texto-escuro: #161616;
+--texto-claro: #c8d4db;
+--texto-branco: #ecf8ff;
+--texto-hover: #218591;
+--texto-opaco: #81888c;
 
 --cinza: #a6afb4;
 --Bege: #F2E2C4;
@@ -245,7 +252,7 @@ h1,h2,h3,h4,h5,h6{
     z-index: 2;
     min-width: 300px;
 }
-#hero h1{
+#hero h2{
     margin: 0 0 10px 0;
     font-size: 80px;
     font-weight: 700;
@@ -255,6 +262,9 @@ h1,h2,h3,h4,h5,h6{
 
 #hero p{
     font-size: 35px;
+    margin-bottom: 50px;
+    font-size: 26px;
+
 }
 #hero p span {
     color: var(--cor2);
@@ -269,31 +279,37 @@ h1,h2,h3,h4,h5,h6{
         background-attachment: fixed;
     }
 }
-@media (max-width: 768px){
-    #hero h1{
-        font-size:75px;
-        line-height: 45px;
-        align-content: center;
-        justify-content: center;
+@media (max-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
     }
 }
 
-#hero p{
-   padding-left: 25px;
-}  
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 90px;
+        line-height: 75px;
+        margin-bottom: 45px;
 
+}
+
+#hero p{
+    font-size: 28px;
+}  
+}
 /* Seções gerais */ 
 section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     padding: 60px 0;
     overflow: hidden;
     background: var(); /* Escolher a cor do fundo onde fica a 2a imagem */
-    
 }
 .section-bg{
     background: var();
     color: var(--cor3);
     
 }
+.section-title {
+    padding-bottom: 30px;}
 
 .section-title h2{
     font-size: 40px;
@@ -321,23 +337,29 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     font-weight: 700;
     font-size: 26px;
     color: var(--cor3);
-
  }
+ .sobre .content ul {
+    list-style: none;
+    padding: 0;
+}
  .sobre .content ul li{
     margin-bottom: 16px;
     display: flex;
     align-items: center;
  }
 
- .sobre .content ul li strong{
+ .sobre .content ul strong{
     margin-left: 10px;
  }
 
- .sobre .content ul li i{
+ .sobre .content ul i{
     font-size: 16px;
     color: var(--fundo-claro);
     margin-right: 4px;
     line-height: 0;
+ }
+ .conquistas {
+    padding-bottom: 30px;
  }
 
  /* Conquistas */
@@ -383,18 +405,19 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     display: block;
     background: none;
     border-radius: 0;
-
 }
-.skills .progress .skill{
+
+.skills .progress .skill {
     padding: 0;
-    margin: 0 0 6px 0;
+    margin: 0 0 5px 0;
     text-transform: uppercase;
     display: block;
     font-weight: 600;
     color: #38e038;
 }
-.skills .progress .skill .val{
-    float:right;
+
+.skills .progress .skill .val {
+    float: right;
     font-style: normal;
 }
 .skills .progress-bar-bg{
@@ -418,6 +441,7 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     padding: 0 0 20px 20px;
     margin-top: -2px;
     border-left: 2px solid var(--title-secundary);
+    position: relative;
 }
 .resume .resume-item h4 {
     line-height: 18px;
@@ -490,19 +514,21 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     z-index: 2;
     opacity: 0;
 }
-.portfolio .portfolio-wrap .portfolio-links{
+
+.portfolio .portfolio-wrap .portfolio-links {
     opacity: 1;
     right: 0;
-    bottom: -60;
+    bottom: -60px;
     left: 0;
     z-index: 3;
     position: absolute;
-    transition: ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
     display: flex;
     justify-content: center;
 }
-.portfolio .portfolio-wrap .portfolio-links a{
-    color: var(--texto-opaco);
+
+.portfolio .portfolio-wrap .portfolio-links a {
+    color: var(--texto-escuro);
     font-size: 28px;
     text-align: center;
     background: var(--texto-claro);
@@ -512,10 +538,12 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
 .portfolio .portfolio-wrap .portfolio-links a:hover{
     background: var(--fundo-claro);
 }
-.portfolio .portfolio-wrap .portfolio-links a+a{
+
+.portfolio .portfolio-wrap .portfolio-links a+a {
     border-left: 1px solid var(--fundo-menu-lateral);
 }
-.portfolio .portfolio-wrap:hover::before{
+
+.portfolio .portfolio-wrap:hover::before {
     top: 0;
     right: 0;
     left: 0;
@@ -523,58 +551,23 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-links{
+.portfolio .portfolio-wrap:hover .portfolio-links {
     opacity: 1;
     bottom: 0;
 }
-.breadcrumbs{
-    padding: 20px 0;
-    background: var(--texto-titulo-claro);
-}
-.breadcrumbs h2{
-    font-size: 26px;
-    font-weight: 300;
-}
-.breadcrumbs ol{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 15px;
-}
-.breadcrumbs ol li{
-    padding-left: 10px;
-}
-.breadcrumbs ol li+li::before{
-    content: "/";
-    display: inline-block;
-    padding-right: 10px;
-    color: var(--texto-titulo-claro);
-}
 
-@media(max-width 768px){
-    .breadcrumbs .d-flex{
-        display: block !important;
-    }
-    .breadcrumbs ol{
-        display: block;
-    }
-    .breadcrumbs ol li{
-        display: inline-block;
-    }
-}
+/* Serviços // Produtos  */
 
-
-.services .icon-box{
+.services .icon-box {
     margin-bottom: 20px;
 }
-.services .icon{
+
+.services .icon {
     float: left;
     display: flex;
     align-items: center;
     justify-content: center;
-    width:54px;
+    width: 54px;
     height: 54px;
     background: var(--fundo-menu-lateral);
     border-radius: 50%;
@@ -582,20 +575,23 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     border: 2px solid var(--cor-detalhes);
     box-shadow: 0 0 8px 2px black;
 }
-.services .icon i{
-    color: var(--fundo-claro);
+
+.services .icon i {
+    color: var(--texto-claro);
     font-size: 24px;
     line-height: 0;
 }
 
-.services .icon-box:hover .icon{
+.services .icon-box:hover .icon {
     background: var(--fundo-claro);
     transition: ease-in-out 0.3s;
 }
-.services .icon-box:hover .icon i{
+
+.services .icon-box:hover .icon i {
     color: var(--texto-escuro);
 }
-.services .title{
+
+.services .title {
     margin-left: 80px;
     margin-bottom: 15px;
     font-weight: 700;
@@ -608,48 +604,57 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     line-height: 24px;
     font-size: 18px;
 }
+
 /* depoimentos / feedbacks  */
 .depoimentos, 
-.depoimentos .depoimentos-slider{
+.depoimentos .depoimentos-slider {
     overflow: hidden;
 }
+
 .depoimentos .depoimento-item {
     /* box-sizing: content-box; */
     text-align: center;
     min-height: 320px;
 }
+
 .depoimentos .depoimento-item .depoimento-img {
     width: 90px;
     border-radius: 50%;
     margin: 0 auto;
 }
+
 .depoimentos .depoimento-item h3 {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0 5px 0;
     color: var(--cor-detalhes);
 }
+
 .depoimentos .depoimento-item h4 {
     font-size: 14px;
     color: var(--texto-claro);
     margin: 0;
 }
+
 .depoimentos .depoimento-item .quote-icon-left,
-.depoimentos .depoimento-item .quote-icon-right{
+.depoimentos .depoimento-item .quote-icon-right {
     color: var(--cor-detalhes);
     font-size: 26px;
 }
+
 .depoimentos .depoimento-item .quote-icon-left {
     position: relative;
     display: inline-block;
     left: -5px;
 }
+
 .depoimentos .depoimento-item .quote-icon-right {
     position: relative;
     display: inline-block;
     top: 10px;
     right: -5px;
 }
+
 .depoimentos .depoimento-item p {
     font-style: italic;
     margin: 0 15px 35px 15px;
@@ -660,6 +665,7 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     border-radius: 8px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
 }
+
 .depoimentos .depoimento-item p::after {
     content: "";
     width: 0;
@@ -671,10 +677,12 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     border-right: 20px solid transparent;
     border-left: 20px solid transparent;
 }
+
 .depoimentos .swiper-pagination {
     margin-top: 20px;
     position: relative;
 }
+
 .depoimentos .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
@@ -683,22 +691,29 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     /* border: 1px solid var(--cor-detalhes); */
     
 }
-.depoimentos .swiper-pagination .swiper-pagination-bullet-active{
-    background: var(--Verde-florescente);
+
+.depoimentos .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--texto-claro);
 }
+
 /* .depoimentos .swiper-pagination .swiper-pagination-bullet:hover{
     background: var(--cor-detalhes);
 } */
-.contato{
+/* Contato */
+.contato {
     padding-bottom: 130px;
 }
-.contato .info{
+
+.contato .info {
     padding: 30px;
-    background: var(--Bege);
+    padding-right: 30px;
+    /*opcial*/
+    background: var(--texto-claro);
     width: 100%;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
-.contato .info i{
+
+.contato .info i {
     font-size: 20px;
     color: var(--cor-detalhes);
     float: left;
@@ -711,63 +726,85 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     align-items: center;
     transition: all 0.3s ease-in-out;
 }
-.contato .info h4{
+
+.contato .info h4 {
     padding: 0 0 0 60px;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 5px;
     color: var(--Verde-florescente);
 }
-.contato .info p{
+
+.contato .info p {
     padding: 0 0 10px 60px;
     margin-bottom: 20px;
     font-size: 16px;
 }
-.contato .info .fone i:hover{
-    background: var(--rosa);
-    color: var(--rosa);
+
+.contato .info i:hover {
+    background: var(--fundo-claro);
+    color: var(--texto-branco);
 }
-.contato .info .fone a:hover{
-    color: var(--rosa);
+
+.contato .info .fone a {
+    color: var(--texto-escuro);
 }
-.contato.email-form{
+
+.contato .info .fone a:hover {
+    color: var(--cor-detalhes);
+}
+
+.contato .email-form {
     width: 100%;
     padding: 30px;
     background: var(--Bege);
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); 
 }
-.contato .email-form .form-grupo{
+
+.contato .email-form .form-grupo {
     padding-bottom: 10px;
     margin-bottom: 15px;
-
+    /*voltar aqui*/
 }
-.contato .email-form label{
+
+.contato .email-form label {
     padding-top: 30px;
     padding-bottom: 5px;
     font-size: 18px;
     color: red;
 }
-.contato .email-form input,
-.contato .email-form textarea{
-    border-radius: 0;
+
+/*.contato .email-form input, 
+.contato .email-form textarea {
+    /* border-radius: 0; 
+    /* background: ; 
+    /* box-shadow: none; 
+}*/
+.contato .email-form input {
+    height: 40px;
 }
-.contato .email-form input{
-        height: 45px;
-}
-.contato .email-form textarea{
+
+.contato .email-form textarea {
     padding: 10px 15px;
 }
-.contato .email-form button
-[type=submit]{
-    background: var(--cor3);
+
+.contato .email-form button[type=submit] {
+    background: var(--cor-detalhes);
     border: 0;
     padding: 10px 24px;
     color: var(--Branco);
     border-radius: 4px;
-    margin-top: ;
+    margin-top: 35px;
+    transition: 0.5s;
 }
+
+.contato .email-form button[type=submit]:hover {
+    background: var(--fundo-menu-lateral);
+    color: var(--texto-claro);
+}
+
 /* Roda pé */
-#footer{
+#footer {
     padding: 15px;
     color: var(--texto-claro);
     font-size: 16px;
@@ -782,25 +819,136 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
 #footer .copyright {
     text-align: center;
 }
-#footer .creditos{
+
+#footer .creditos {
     padding-top: 5px;
     text-align: center;
     font-size: 13px;
     color: var(--texto-claro);
 }
-#footer .creditos a{
-    color: aqua;
+
+#footer .creditos a {
+    color: var(--cor-detalhes);
 }
 
 #footer .creditos a:hover {
-    color: var(--texto-titulo-escuro);
+    color: var(--texto-hover);
 }
 
-@media (max-width: 1199px){
+@media (max-width: 1199px) {
     #footer {
         position: static;
         width: auto;
         padding-right: 20px 15px;
     }
+}
+
+/* portfolio adicional // Pagina dos Produtos */
+.breadcrumbs {
+    padding: 20px 0;
+    background: var(--texto-opaco);
+}
+
+.breadcrumbs h2 {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+.breadcrumbs ol li {
+    padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+    content: "/";
+    display: inline-block;
+    padding-right: 10px;
+    color: var(--texto-escuro);
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+        display: block !important;
+    }
+
+    .breadcrumbs ol {
+        display: block;
+    }
+
+    .breadcrumbs ol li {
+        display: inline-block;
+    }
+}
+
+.portfolio-detalhes {
+    padding-top: 40px;
+}
+
+.portfolio-detalhes .detalhes-slider img {
+    width: 100%;
+}
+
+.portfolio-detalhes .detalhes-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+.portfolio-detalhes .detalhes-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: var(--texto-opaco);
+    opacity: 1;
+    /* border: 1px solid black; */
+}
+
+.portfolio-detalhes .detalhes-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--borda-escura);
+}
+
+.portfolio-detalhes .portfolio-info {
+    background: var(--fundo-claro);
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(5, 15, 25, 0.5);
+}
+
+.portfolio-detalhes .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c7c7c7;
+    color: var(--fundo-menu-lateral);
+}
+
+.portfolio-detalhes .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.portfolio-detalhes .portfolio-info ul li+li {
+    margin-top: 10px;
+}
+
+.portfolio-detalhes .portfolio-description {
+    padding-top: 30px;
+}
+
+.portfolio-detalhes .portfolio-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--fundo-menu-lateral);
+}
+.portfolio-detalhes .portfolio-description p {
+    padding: 0;
 }
     
