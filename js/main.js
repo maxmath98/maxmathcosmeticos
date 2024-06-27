@@ -1,13 +1,13 @@
 /**
 * Template Name: iPortfolio
 * Updated: Jul 27 2023 with Bootstrap v5.3.1
-* License: https://bootstrapmade.com/license/
 */
 (function() {
   "use strict";
+  /*O modo estrito ("use strict") é ativado para ajudar a detectar erros e comportamentos problemáticos no código. */
 
   /**
-   * Função de seleção fácil
+   * Função de seleção
    */
   const select = (el, all = false) => {
     el = el.trim()
@@ -20,10 +20,8 @@
 
   /**
    * Easy event listener function 
-   * Função de ouvinte de eventos
-   * Função espera que um evento ocorra e depois responde a ele
-   * Função de ouvinte de eventos
-   */
+   * Função de Adição de Eventos (on)
+   * Função espera que um evento ocorra e depois responde a ele  */
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
     if (selectEl) {
@@ -232,7 +230,7 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
    * Portfolio
    * Controle deslizante de detalhes do portfólio
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('.portfolio-detalhes', {
     speed: 400,
     loop: true,
     autoplay: {
@@ -249,7 +247,7 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
   /**
    * Controle deslizante de depoimentos
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.depoimentos-slider', {
     speed: 600,
     loop: true,
     autoplay: {
