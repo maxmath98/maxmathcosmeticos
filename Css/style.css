@@ -8,7 +8,6 @@
 --fundo-escuro: #2f3538;
 
 --borda-clara: #38E0F2;
---borda-escura: #037F8C;
 
 --texto-escuro: #161616;
 --texto-claro: #c8d4db;
@@ -25,10 +24,8 @@
 --verde-escuro: #032b03;
 
 --texto-titulo-claro: #38E0F2;
---texto-titulo-escuro: #037F8C;
 --cor-detalhes: #149ddd;
 
---cor2: #ffffff;
 --cor3: #037f8c;
 --Preto: #000000;
 }
@@ -41,7 +38,7 @@ body{
 }
 
 a {
-    color: var(--texto-escuro);
+    color: var(--preto);
     text-decoration: none;
 }
 a:hover{
@@ -124,7 +121,7 @@ h1,h2,h3,h4,h5,h6{
     width: 35px;
     height: 35px;
     transition: 0.3s;
-    box-shadow: 0px 0px 8px 0px var(--cor2);
+    box-shadow: 0px 0px 8px 0px var(--Branco);
 }
 
 .perfil .social-links a:hover,
@@ -137,7 +134,7 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 50%;
     width: 35px;
     height: 35px;
-    box-shadow: 0px 0px 5px 0px var(--cor2);
+    box-shadow: 0px 0px 5px 0px var(--Branco);
 }
 
 
@@ -196,7 +193,7 @@ h1,h2,h3,h4,h5,h6{
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
     text-decoration: none;
-    color: var(--texto-claro);
+    color: var(--texto-clar);
 }
 .nav-menu a:hover i,
 .nav-menu .active i,
@@ -214,7 +211,7 @@ h1,h2,h3,h4,h5,h6{
     font-size: 26px;
     transition: all 0.4s;
     background: var(--cor-detalhes);
-    color: var(--texto-claro);
+    color: var(--texto-claro); /* cor 3 pontinhos do botão superior */
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -257,7 +254,7 @@ h1,h2,h3,h4,h5,h6{
     font-size: 80px;
     font-weight: 700;
     line-height: 60px;
-    color: var(--cor2);
+    color: var(--Branco);
 }
 
 #hero p{
@@ -267,10 +264,10 @@ h1,h2,h3,h4,h5,h6{
 
 }
 #hero p span {
-    color: var(--cor2);
+    color: var(--Branco);
     padding-bottom: 1px;
     letter-spacing: 2px;
-    border-bottom: 3px solid var(--cor2);
+    border-bottom: 3px solid var(--Branco);
 }
 
 
@@ -301,11 +298,11 @@ h1,h2,h3,h4,h5,h6{
 section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     padding: 60px 0;
     overflow: hidden;
-    background: var(); /* Escolher a cor do fundo onde fica a 2a imagem */
+    background: var(--); /* Escolher a cor do fundo onde fica a 2a imagem */
 }
 .section-bg{
-    background: var();
-    color: var(--cor3);
+    background: var(--fundo-menu-lateral); /* Fundo da parte habilidades/skills */
+    color: var(--);
     
 }
 .section-title {
@@ -316,7 +313,7 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     font-weight: bold;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    color: var(--cor3); /* Texto da segunda seção */
+    color: var(--Branco); /* Texto da segunda seção */
     position: relative;
 }
 .section-title h2::after{
@@ -325,7 +322,7 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     display: block;
     width: 50px;
     height: 3px;
-    background: var(--cor-detalhes);
+    background: var(--Branco);
     bottom: 0;
     left: 0;
 }
@@ -336,7 +333,7 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
  .sobre .content h3{
     font-weight: 700;
     font-size: 26px;
-    color: var(--cor3);
+    color: var(--Branco);
  }
  .sobre .content ul {
     list-style: none;
@@ -369,19 +366,20 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     width: 100%;
  }
 
- .conquistas .count-box i{
-    display: block;
-    font-size: 44px;
-    color: var(--cor-detalhes);
+ .conquistas .count-box i{ /* icone do conquistas */
+    display: ;
+    font-size: 40px;
+    color: var(--Preto);
     float: left;
     line-height: 0;
+    padding: 0 8px 0 0 ;
  }
  .conquistas .count-box span{
     font-size: 48px;
     line-height: 40px;
     display: block;
     font-weight: 700;
-    color: var(--fundo-claro); /* Cor do numero de vendas */
+    color: var(--Branco); /* Cor do numero de vendas */
 
  }
  .conquistas .count-box p{
@@ -528,7 +526,7 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-    color: var(--texto-escuro);
+    color: var(--Preto);
     font-size: 28px;
     text-align: center;
     background: var(--texto-claro);
@@ -588,7 +586,7 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
 }
 
 .services .icon-box:hover .icon i {
-    color: var(--texto-escuro);
+    color: var(--Preto);
 }
 
 .services .title {
@@ -661,7 +659,7 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     padding: 20px;
     background: var(--fundo-claro);
     position: relative;
-    color: var(--texto-escuro);
+    color: var(--Preto);
     border-radius: 8px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
 }
@@ -747,7 +745,7 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
 }
 
 .contato .info .fone a {
-    color: var(--texto-escuro);
+    color: var(--Preto);
 }
 
 .contato .info .fone a:hover {
@@ -871,7 +869,7 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
     content: "/";
     display: inline-block;
     padding-right: 10px;
-    color: var(--texto-escuro);
+    color: var(--Preto);
 }
 
 @media (max-width: 768px) {
@@ -910,7 +908,7 @@ section{ /* Muda o espaço entre  a linha que termina a imagem e o sobre */
 }
 
 .portfolio-detalhes .detalhes-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background: var(--borda-escura);
+    background: var(--cor3);
 }
 
 .portfolio-detalhes .portfolio-info {
